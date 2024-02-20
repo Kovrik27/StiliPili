@@ -1,0 +1,59 @@
+﻿<Window x:Class="StiliPili.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StiliPili"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="BlanchedAlmond">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="МОЁ РЕЗЮМЕ" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource Labelechka}"/>
+        <Label Content="ФАМИЛИЯ" Grid.Row="1" Style="{StaticResource Labelechka}"/>
+        <Label Content="ИМЯ" Grid.Row="2" Style="{StaticResource Labelechka}"/>
+        <Label Content="ОТЧЕСТВО" Grid.Row="3" Style="{StaticResource Labelechka}"/>
+        <Label Content="ТЕЛЕФОН" Grid.Row="4" Style="{StaticResource Labelechka}"/>
+        <Label Content="СЕМЕЙНОЕ ПОЛОЖЕНИЕ" Grid.Row="5" Style="{StaticResource Labelechka}"/>
+        <Label Content="E-MAIL" Grid.Row="1" Grid.Column="2" Style="{StaticResource Labelechka}"/>
+        <Label Content="ВОДИТЕЛЬСКИЕ ПРАВА" Grid.Row="2" Grid.Column="2" Style="{StaticResource Labelechka}"/>
+        <Label Content="ПОЛ" Grid.Row="3" Grid.Column="2" Style="{StaticResource Labelechka}"/>
+        <Label Content="ДЕНЬ РОЖДЕНИЯ" Grid.Row="4" Grid.Column="2" Style="{StaticResource Labelechka}"/>
+
+        <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource Tekst}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource Tekst}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource Tekst}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource Tekst}"/>
+        <ComboBox Grid.Row="5" Grid.Column="1" Style="{StaticResource ComboUltra}">
+            <ComboBoxItem Content="Не женат"/>
+            <ComboBoxItem Content="Не замужем"/>
+            <ComboBoxItem Content="Больше работы(женат)"/>
+            <ComboBoxItem Content="Никаких дикретов(замужем)"/>
+        </ComboBox>
+        <TextBox Grid.Row="1" Grid.Column="3" Style="{StaticResource Tekst}"/>
+        <TextBox Grid.Row="2" Grid.Column="3" Style="{StaticResource Tekst}"/>
+        <RadioButton Grid.Row="3" Grid.Column="3" Style="{StaticResource Radia}"/>
+        <RadioButton Grid.Row="3" Grid.Column="3" Style="{StaticResource Radia2}"/>
+        <DatePicker Grid.Row="4" Grid.Column="3"/>
+        <Label Content="ВЫ НЕ РОБОТ?" Grid.Row="5" Grid.Column="2" Style="{StaticResource Labelechka}"/>
+        <CheckBox Grid.Row="5" Grid.Column="3" Style="{StaticResource Checki}"/>
+        <Button Grid.Row="6" Grid.Column="1" Style="{StaticResource MainButton}"/>
+        <Button Grid.Row="6" Grid.Column="2" Click="ClickAddFotka"  Style="{StaticResource NeMainButton}"/>
+
+    </Grid>
+</Window>
